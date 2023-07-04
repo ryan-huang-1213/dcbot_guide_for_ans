@@ -20,7 +20,7 @@ module.exports = {
         let C = null;
         let tmp = new Array(2);
         for (let i = 0; i < height.length; i++) {
-            if (a[i] * b[i] > c * d && a[i] * b[i] < C) {
+            if (a[i] * b[i] > c * d && (a[i] * b[i] < C || C==null)) {
                 C = a * b;
                 tmp[0] = a;
                 tmp[1] = b;
